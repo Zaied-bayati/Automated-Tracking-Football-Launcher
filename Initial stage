@@ -34,6 +34,29 @@ Gone are the days of bulky, old-generation JUGS machines
 
 6.) Make the system simple and user-friendly
 
+This is just the beginning—but it’s the foundation for something much bigger.
+
+
+
+The first step was simple: test the idea.
+Since portability was a core goal, I didn’t want to copy the traditional JUGS-machine approach of using two massive motors and large spinning tires. That design works, but it’s bulky, heavy, and not something you throw in a backpack.
+
+Instead, I asked a different question:
+Could multiple smaller DC motors achieve the same result as two large ones?
+
+If six small motors could deliver enough speed, control, and consistency, then a compact launcher suddenly becomes realistic.
+With that in mind, I designed an initial proof-of-concept test.
+The setup was a tube-style launcher, where the football would be pushed straight through a channel. The purpose of this test wasn’t perfection—it was feasibility. Before spending time building software, tracking systems, and control logic, I needed to know one thing:
+Could this launcher realistically achieve the distance and accuracy I was aiming for?
+If the hardware couldn’t deliver, nothing else would matter.
+Here’s what I came up with.
+
+#Test One
+Simple tube launcher with three DC motors and three small drive wheels, aligned straight to propel the ball forward
+
+
+
+
 
 
 
