@@ -1,0 +1,39 @@
+
+
+All of this started with a simple question:
+How can I train as a wide receiver without relying on someone else to throw me the football?
+
+Right now, the options online are either cheap toys or overpriced JUGS-style machines. Even with a ball machine, you still need another person to aim it and feed the ball through two massive spinning tires. To me, that completely defeats the purpose.
+
+So I started thinking differently.
+
+What if I could build a football launcher that tracks me, predicts where I’ll be, and throws the ball to me automatically—no extra person required? A system that acts like a quarterback, not just a machine. That felt like a real problem worth tackling.
+
+This project is the beginning of that idea. Here, I’ll walk through the initial stages of building it.
+
+
+Constraints
+
+As a broke college student, building a full-scale system just wasn’t realistic. But a smaller prototype was. The goal wasn’t perfection—it was to prove the concept works. If I could demonstrate accuracy, tracking, and repeatability at a smaller scale, scaling up becomes a solvable problem later.
+
+So before building anything, I defined some clear design goals.
+
+
+Design Goals
+
+1.) Use a smaller football (around half the size of an NFL football)
+
+2.) Launch the ball accurately, with enough speed and spin to mimic a real QB throw
+
+3.) Track the player by estimating distance, size, and speed to make accurate throws
+
+4.) Collect player data in real time so routes can be analyzed and improvements can be tracked over time
+
+5.) Keep the system small and compact—portable enough to fit in a backpack
+Gone are the days of bulky, old-generation JUGS machines
+
+6.) Make the system simple and user-friendly
+
+
+
+
