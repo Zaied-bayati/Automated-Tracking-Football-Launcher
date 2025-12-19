@@ -1,0 +1,60 @@
+Stage Four – Failure, Reflection, and Real Engineering
+
+At this point, the football launcher works. What started as a simple idea has turned into something I can test, break, improve, and rebuild—and honestly, this is the part of engineering that excites me the most.
+
+There are infinite solutions to this problem. I could have built this system hundreds of different ways, using countless materials and designs. But that realization reminded me of a famous quote—paraphrased—from Michelangelo:
+
+When he looked at a block of marble, he didn’t see stone.
+He saw the masterpiece hidden inside it.
+His job wasn’t to sculpt, but to reveal what was already there.
+
+That idea stuck with me.
+
+When I started this project, I had basic electrical engineering skills. By the time I reached this stage, I wasn’t just learning circuits or mechanics—I was learning engineering as a whole. Creating a puzzle and then solving it yourself is its own form of art. Engineering is art.
+
+What Happened in Stage Four?
+
+With a lot more confidence, I took a major leap in design—and with it came a lot of problems.
+
+After about 8–10 launches, the 3D-printed PLA tube failed. It cracked, and one of the tires went flying. Surprisingly, this felt like a good sign. A few months earlier, nothing was breaking—because nothing existed yet. Failure meant I was finally pushing the system hard enough to find its limits.
+
+So I stepped back.
+
+I collected the data I had, re-evaluated the design, learned more about Inventor Pro, and rethought how I was building everything. One major realization stood out: designing everything as a single solid piece was holding me back.
+
+When something broke, I couldn’t just fix that part—I had to reprint the entire tube. That was slow, inefficient, and expensive.
+
+Design Shift – Modular Thinking
+
+Stage Four marked a shift to a parts-based design.
+
+Instead of one large printed component, everything is now modular and connected using bolts. This change made a huge difference:
+
+Broken parts can be replaced individually
+
+Iteration is faster
+
+Costs are lower
+
+Design changes don’t require starting from scratch
+
+This was a big step forward—not just for the launcher, but for me as a prototyper.
+
+Lessons Learned
+
+I also had to confront reality. Working a full-time job meant I only had weekends to build. Time became the most valuable resource. Optimizing iteration speed mattered just as much as optimizing performance.
+
+I also learned that my X and Y axis movement, which relied on a servo, simply wasn’t strong enough for what I needed. That’s a problem to solve next—but now I know it’s a problem worth solving.
+
+Enough talk.
+
+This is Stage Four of the football launcher.
+
+
+
+
+
+
+
+
+
