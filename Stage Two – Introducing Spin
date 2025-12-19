@@ -1,0 +1,13 @@
+Stage Two – Introducing Spin
+
+With the first test proving the idea wasn’t impossible, the next challenge was obvious: spin.
+
+A football is an oddly shaped object, and without proper spin, it won’t fly straight. Instead, it flops through the air, creates excessive drag, and loses distance fast.
+If this launcher was ever going to mimic a real quarterback, spin had to be part of the equation.
+
+The goal of Stage Two was to see how angling the DC motors would affect the spin of the football during launch.
+Rather than pushing the ball straight through the tube, I adjusted the motor angles so the wheels applied a rotational force as the ball passed through.
+This test wasn’t about perfect spirals or max distance—it was about understanding whether controlled spin was even achievable with this setup.
+That small design change marked a big shift: the launcher was no longer just throwing the ball—it was starting to throw it correctly.
+
+**Please view the test video by copying and pasting the link into YouTube, as the file is too large for GitHub.**
