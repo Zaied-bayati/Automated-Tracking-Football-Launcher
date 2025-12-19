@@ -53,8 +53,63 @@ This is Stage Four of the football launcher.
 ![Image](https://github.com/user-attachments/assets/0eb39ed4-7898-43fa-8090-23a086cc50d4)
 
 
+https://youtube.com/shorts/S69k_O2PdCM?feature=share
+
+**Please see the provided video, which showcases the X-axis movement of the launcher. Two IR sensors are used as boundary limits, allowing the system to determine how far it   can safely rotate to the left and right.
+  These sensors act as protective stops, preventing the launcher from over-rotating and causing damage—such as pulling on cables or stressing mechanical components.**
+
+
+Huge jumps were made—both in the overall design and in how I interacted with the system.
+
+At this point, I realized I could no longer rely on simple push buttons to test the launcher. The system had become too complex for that. I needed a more structured and reliable way to interface with it—something that would let me actually see what was happening inside the system while it was running.
+
+That meant software.
+
+To start simple and stay flexible, I chose serial communication between the C-based microcontroller and an external interface—my laptop (or, in fancier terms, a basic HMI). This allowed me to send commands, receive feedback, and debug behavior in real time without constantly rewiring hardware.
+
+Using serial output gave me insight into:
+
+- Motor states
+- Timing and sequencing
+- Launch logic
+- System behavior during failures
+
+More importantly, it helped me understand why the launcher was behaving the way it was—not just that it was behaving that way.
+This marked a big shift in the project. The launcher wasn’t just hardware anymore—it was becoming a system.
+
+Below are some screenshots showing what this interface looked like during testing.
+
+![Image](https://github.com/user-attachments/assets/67fa145b-631a-4646-8d96-1c8fe1f7b583)
+![Image](https://github.com/user-attachments/assets/614e5e52-2f73-4c6a-b9c0-d3487bbc4d0a)
+![Image](https://github.com/user-attachments/assets/ec355bcf-ca55-4e93-b574-876a9c8466d7)
+![Image](https://github.com/user-attachments/assets/754871fa-6b54-458c-8eeb-fc23fd21ce3a)
+
+
+At this point, everything was coming together. The design was solid, the movement system worked, and the software interface gave me real insight into what the launcher was doing.
+
+The final step was simple: wire everything up and attempt the very first full launch.
+
+Below is the video from that first complete test.
+
+
+https://youtube.com/shorts/7WCyEp3k-Bc
+
+So… it failed.
+
+I couldn’t even get a single launch off—and the reason was a simple design oversight. After spending so much time building the software and pushing toward a “full system” test, I missed one of the most fundamental questions:
+
+Did the football actually have enough clearance to make it through the tube without hitting the side walls?
+
+It didn’t.
+
+That moment was frustrating, but also important. It exposed a blind spot in my process—and that’s exactly what prototyping is supposed to do.
+
+As mentioned before, failure doesn’t mean going backward. It means progress is being made. The system was complex enough now that real limitations were showing themselves.
+
+And progress was made.
 
 
 
+**See Stage Five (current stage) for what came next.**
 
 
