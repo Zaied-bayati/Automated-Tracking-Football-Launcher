@@ -1,0 +1,46 @@
+Stage Five – Current State and What’s Next
+
+At this point, this project became more than just a summer build. I genuinely see real-world potential in it. That said, reality set in.
+Between only being able to work on the launcher on weekends and over the summer, I eventually ran out of time. School started back up, and my focus had to shift back to continuing my studies as an electrical engineering student at Texas Tech University.
+This stage documents the final test, the current state of the system, and where I plan to take this project next—either in a future summer or when time allows.
+
+
+What Changed
+
+Based on the issues discovered in the previous stage, the fix itself was straightforward—thanks to one important design decision made earlier: modularity.
+Because the launcher was now fully parts-based, I didn’t need to redesign or reprint the entire system. Instead, I was able to:
+
+-Shorten the launch tube
+-Increase internal clearance for the football
+-Reduce the chance of the ball contacting the tube walls during launch
+
+This change directly addressed the clearance issue that caused the Stage Four failure.
+A quick redesign and reprint later, and the system was back in a testable state.
+
+Current Status
+
+With the updated tube and improved clearance, the launcher is once again operational and ready for testing. While this isn’t the final form of the system, it represents a solid stopping point given time constraints.
+
+Below is a video showing the most recent design and test configuration.
+
+
+https://youtube.com/shorts/ZoISnDnG29E?feature=share
+** updated tube launcher **
+
+https://youtu.be/vfnO_iYXLy0
+** launch test ** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
