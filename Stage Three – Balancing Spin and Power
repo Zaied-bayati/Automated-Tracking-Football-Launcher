@@ -1,0 +1,62 @@
+Stage Three – Balancing Spin and Power
+
+Good news first: the spin worked.
+
+By angling the DC motors, the launcher was finally able to introduce controlled rotation to the football. From a physics standpoint, this made sense. Angling the motors effectively split the applied force into two components—one responsible for forward motion and the other for rotational motion.
+Of course, this came with a tradeoff.
+
+The football now lost a noticeable amount of its forward-driving force.
+Why This Happened
+
+From basic physics, we know that force can be resolved into x and y components. In the original straight-on design, all of the force was applied along a single axis, meaning 100% of the motor output went into pushing the football forward.
+Once the motors were angled (around 35°), the same total force was now divided between:
+
+A forward component (distance)
+A rotational component (spin)
+
+By conservation of energy, some of the force that previously contributed to distance was now being used to generate spin. The result was better flight stability—but reduced range.
+Compensating for the Loss
+At this point, the solution became obvious: add more force.
+
+The design already allowed for six total DC motors, so instead of backing off the angle, I increased the available power. On top of that, I realized the small wheels I was using weren’t doing me any favors—they simply didn’t carry enough momentum.
+
+Using Newton’s second law:
+
+𝐹 = 𝑚⋅𝑎
+F=m⋅a
+
+If I wanted more force, increasing mass was one way to get there.
+
+So I:
+
+Switched to larger tires to increase effective mass and momentum
+Allowed the motors more time to spin up to speed before feeding the football through
+These changes helped recover much of the lost driving force while keeping the added spin.
+
+Expanding the Design
+With growing confidence that the launcher could both throw the ball and add proper spin, I decided to take a bigger leap in the design process: movement.
+
+This stage involved a lot of iteration—printing, testing, reprinting, and repeating. That part isn’t glamorous, but it’s where the real progress happens.
+
+Enough talk. Let’s get to the results.
+
+Here’s Stage Three.
+
+
+<img width="233" height="311" alt="Image" src="https://github.com/user-attachments/assets/424b6bfc-9170-4f24-b8d5-642a1beeb478" />
+
+
+
+https://youtube.com/shorts/oPdmx4iuX2g
+** This YouTube short shows the football flying out** 
+
+
+
+
+
+
+
+
+
+
+
