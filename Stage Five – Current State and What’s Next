@@ -32,12 +32,113 @@ https://youtu.be/vfnO_iYXLy0
 
 
 
+---Technical Overview (Current State)---
+
+Below is a high-level technical overview of the system as it exists today. I’m intentionally not including videos here—the system still works, but many parts are crude and need refinement before I feel comfortable showcasing them publicly.
+
+---Mechanical System---
+
+The mechanical side of the launcher is functional. The system can successfully launch a football and apply spin, although the results are still inconsistent. Distance, stability, and repeatability vary from launch to launch, which is expected at this stage.
+
+---Controls and Software---
+
+A PID controller is currently implemented on the Y-axis motor. Its main role is to act as a damper against vibrations caused by:
+- Motor torque
+- Sudden impulse forces during launch
+
+Because the tube assembly is unbalanced, the DC motor must continuously apply force to hold the launcher at its commanded position. The PID loop handles this well, keeping the system stable during idle and launch events.
+
+From a software standpoint, the control system works reliably:
+- All commands are followed correctly
+- Events are logged
+- Real-time position data is streamed and visualized using position graphs
+- At this stage, the software and control architecture are solid and extensible.
+
+---Computer Vision---
+
+The system uses a YOLOv8 model paired with a Logitech camera to implement basic computer vision. This allows the launcher to detect and track a human target.
+
+The vision system is currently very crude:
+- The camera has a narrow field of view
+- Resolution is limited
+
+However, for basic logic—
+“person left → turn left”
+“person right → turn right”
+—it works reasonably well and serves as a proof of concept.
 
 
+---Future Plans and Improvements---
 
+Launch Consistency
 
+The biggest mechanical weakness right now is the loading and launch mechanism. Currently, two DC motors with tires feed the football into the tube. While this can work, it’s inconsistent:
 
+- The ball may hit the tube wall
+- The ball may stall or fail to exit
+- The ball may contact the housing
 
+Additionally, the housing that holds the football can cause the ball to bind or stick.
+
+Possible solutions include:
+- Replacing the DC motor feed system with a linear actuator for consistent, controlled feeding
+- Redesigning the football housing to be mechanically simpler and more rigid
+
+Reducing variables during launch is critical. The more consistent the launch, the better the data—and the more effective the tracking and prediction software can become.
+
+Distance Estimation
+
+Right now, the vision system can only determine:
+- Whether a person is present
+- Whether they are left or right of the camera’s centerline
+
+What the system does not know is distance—and that matters. Distance directly affects:
+- Launch angle
+- Motor speed
+- Required spin
+
+Potential solutions being considered:
+- LiDAR
+- Ultrasonic sensing
+- RF-based distance estimation
+
+There are many IoT-based approaches to this problem, and further research is needed to determine the most reliable and practical option.
+
+Hardware Improvements
+
+Additional planned upgrades include:
+- Higher-quality DC motors
+- Adding a third large drive tire
+
+With only two tires, inconsistencies arise. A third contact point should improve grip, alignment, and launch repeatability.
+
+---Long-Term Vision---
+
+Once launch consistency and distance estimation are solved, attention will shift back to vision and prediction.
+
+Camera improvements may include:
+- A wider field-of-view lens
+- Multiple cameras to cover a larger area
+
+From there, the ultimate goal is prediction.
+I want to train an AI model to understand wide receiver routes. This includes learning basic physics relationships such as:
+- Player velocity and direction
+- Launch power and angle
+- Where the ball must be aimed so the receiver does not need to stop running
+
+The plan is to use an LSTM-based deep learning model to track player movement and predict future position, allowing the launcher to aim ahead of the receiver—much like a real quarterback.
+
+---Final Thoughts---
+
+I don’t know what I don’t know—and I fully expect each step forward to introduce a new set of challenges. But with each iteration, I’m learning more than I ever could.
+This project has been a real-world application of engineering concepts: mechanical design, controls, software, vision, and systems thinking—all working together.
+
+If you’ve read this far and have interest in the project, feedback, or suggestions, feel free to reach out. If you’d like access to any of the files or code used, I’m happy to share.
+
+Tools used:
+- Mechanical design: Autodesk Inventor Pro
+- 3D printing: Bambu Lab printer
+- Software & firmware: VS Code and Arduino IDE
 
 
 
